@@ -15,8 +15,8 @@ const Header = () => {
   <Image
     src={logo}
     alt="KODY Works Logo"
-    width={180}
-    height={180}
+    width={280}
+    height={280}
     className="logo-image"
     priority
   />
