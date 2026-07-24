@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+//import { Footer } from "./components/Footer";
+// import { Header } from "./components/Header";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KodyWorks | IT Company",
-  description: "KodyWorks delivers modern IT solutions, software development, and cloud support for growing businesses.",
+  title: "My App",
+  description: "Simple starter app.",
 };
 
 export default function RootLayout({
@@ -27,7 +31,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-screen bg-transparent">
+        <div className="flex min-h-screen flex-col">
+          <Header />
+
+          <main className="flex-1">{children}</main>
+
+          <Footer />
+        </div>
+      </body>
     </html>
   );
 }
