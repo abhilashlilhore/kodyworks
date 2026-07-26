@@ -5,22 +5,22 @@ import logo from "../assets/logo.jpeg";
 const Header = () => {
   return (
     <header className="header">
-        <div className="corner-light"></div>
-  <div className="corner-dark"></div>
+      <div className="corner-light"></div>
+      <div className="corner-dark"></div>
       <div className="header-top">
         {/* Logo */}
-      
 
-      <div className="logo-section">
-  <Image
-    src={logo}
-    alt="KODY Works Logo"
-    width={280}
-    height={280}
-    className="logo-image"
-    priority
-  />
-</div>
+
+        <div className="logo-section">
+          <Image
+            src={logo}
+            alt="KODY Works Logo"
+            width={280}
+            height={280}
+            className="logo-image"
+            priority
+          />
+        </div>
 
         {/* Company Info */}
         <div className="company-section">
@@ -30,14 +30,17 @@ const Header = () => {
           </h1>
 
           <div className="consulting-row">
-            <div className="line"></div>
+            <div className="line-one"></div>
             <h2>CONSULTING</h2>
-            <div className="line"></div>
+            <div className="line-one"></div>
           </div>
-
-          <p className="tagline">
-            Delivering Technology Solutions Worldwide
-          </p>
+          <div className="consulting-row">
+            <div className="line-two"></div>
+            <p className="tagline">
+              Delivering Technology Solutions Worldwide
+            </p>
+            <div className="line-two"></div>
+          </div>
         </div>
       </div>
 
