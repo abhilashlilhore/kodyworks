@@ -6,6 +6,10 @@ import {
   FaUserCircle,
 } from "react-icons/fa";
 
+import Image from "next/image";
+import footer_left from "../assets/footer_left.png";
+import footer_right from "../assets/footer_right.png";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -57,19 +61,43 @@ const Footer = () => {
 
       <div className="footer-bottom">
 
-        <div className="left-shape"></div>
 
-        <div className="owner">
 
-          <FaUserCircle className="owner-icon" />
+        <div className="logos-row">
 
-          <span className="label">PROPRIETOR:</span>
+          <div className="logo-section-left">
+            <Image
+              src={footer_left}
+              alt="footer_left"
+              width={180}
+              height={180}
+              className="logo-image-left"
+              priority
+            />
+          </div>
 
-          <span className="name">Rupendra Khatarker</span>
+          <div className="owner">
+
+            <FaUserCircle className="owner-icon" />
+
+            <span className="label">PROPRIETOR:</span>
+
+            <span className="name">Rupendra Khatarker</span>
+
+          </div>
+          
+          <div className="logo-section-right">
+            <Image
+              src={footer_right}
+              alt="footer_right"
+              width={180}
+              height={180}
+              className="logo-image-right"
+              priority
+            />
+          </div>
 
         </div>
-
-        <div className="right-shape"></div>
 
       </div>
 

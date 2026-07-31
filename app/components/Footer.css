@@ -1,6 +1,7 @@
 .footer{
     width:100%;
     font-family:Arial, Helvetica, sans-serif;
+    border: 5px solid #052760;
 }
 
 /* ================= TOP ================= */
@@ -79,10 +80,14 @@
     background:white;
 
     display:flex;
-    justify-content:center;
+
+    flex-direction:column;
+
+    justify-content: flex-end;
+
     align-items:center;
 
-    padding:20px;
+    padding:0;
 
     overflow:hidden;
 
@@ -91,16 +96,21 @@
 .owner{
 
     display:flex;
+
     align-items:center;
+
     gap:15px;
 
     z-index:2;
+
+    padding:20px 0;
 
 }
 
 .owner-icon{
 
     font-size:55px;
+
     color:#1565ff;
 
 }
@@ -108,7 +118,9 @@
 .label{
 
     color:#1147b3;
+
     font-size:22px;
+
     font-weight:bold;
 
 }
@@ -116,79 +128,41 @@
 .name{
 
     font-size:22px;
+
     font-weight:bold;
+
     color:#111;
 
 }
 
-/* Left Decoration */
+.logos-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    /* padding:0 40px 20px; */
+}
 
-.left-shape{
+.logo-section-left,
+.logo-section-right{
 
-    position:absolute;
+    display:flex;
 
-    left:0;
-    bottom:0;
+    align-items:center;
 
-    width:170px;
-    height:70px;
-
-    background:#1565ff;
-
-    clip-path:polygon(0 100%,0 40%,60% 40%,80% 100%);
+    justify-content:center;
 
 }
 
-.left-shape::before{
+.logo-image-left,
+.logo-image-right{
 
-    content:"";
+    max-width:180px;
 
-    position:absolute;
+    max-height:180px;
 
-    left:0;
-    bottom:0;
+    object-fit:contain;
 
-    width:130px;
-    height:70px;
-
-    background:#052760;
-
-    clip-path:polygon(0 100%,0 20%,70% 20%,90% 100%);
-}
-
-/* Right Decoration */
-
-.right-shape{
-
-    position:absolute;
-
-    right:0;
-    bottom:0;
-
-    width:170px;
-    height:70px;
-
-    background:#1565ff;
-
-    clip-path:polygon(20% 100%,40% 40%,100% 40%,100% 100%);
-
-}
-
-.right-shape::before{
-
-    content:"";
-
-    position:absolute;
-
-    right:0;
-    bottom:0;
-
-    width:130px;
-    height:70px;
-
-    background:#052760;
-
-    clip-path:polygon(10% 100%,30% 20%,100% 20%,100% 100%);
 }
 
 /* Responsive */
@@ -223,18 +197,18 @@ flex-direction:column;
     color: #fff;
 
     display: flex;
-    justify-content: center;   /* space-between ki jagah */
+    justify-content: center;
     align-items: center;
 
     padding: 25px 40px;
-    gap: 50px;                 /* items ke beech spacing */
+    gap: 50px;
     flex-wrap: wrap;
 }
 
 .footer-item {
     display: flex;
     align-items: center;
-    justify-content: center;   /* content center */
+    justify-content: center;
     gap: 18px;
     min-width: 320px;
 }
