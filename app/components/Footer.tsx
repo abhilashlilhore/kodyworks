@@ -67,12 +67,10 @@ const Footer = () => {
 
           <div className="logo-section-left">
             <Image
-              src={footer_left}
-              alt="footer_left"
-              width={180}
-              height={180}
-              className="logo-image-left"
-              priority
+                src={footer_left}
+                alt="footer_left"
+                className="logo-image-left"
+                priority
             />
           </div>
 
@@ -89,12 +87,11 @@ const Footer = () => {
           <div className="logo-section-right">
             <Image
               src={footer_right}
-              alt="footer_right"
-              width={180}
-              height={180}
+              alt="footer_right"              
               className="logo-image-right"
               priority
             />
+            
           </div>
 
         </div>
