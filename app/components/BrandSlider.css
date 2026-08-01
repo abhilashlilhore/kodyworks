@@ -1,0 +1,110 @@
+.brand-section {
+  width: 100%;
+  padding: clamp(40px, 8vw, 80px) clamp(20px, 8vw, 40px);
+  background: linear-gradient(180deg, #011542 0%, #0d4bb8 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.brand-section .section-title {
+  gap: clamp(12px, 3vw, 20px);
+}
+
+.brand-section .section-title h2 {
+  color: #ffffff;
+  font-size: clamp(26px, 5vw, 40px);
+}
+
+.brand-section .line {
+  background: #ffffff;
+}
+
+.brand-section .line::before {
+  background: #ffffff;
+}
+
+.brand-subtitle {
+  color: #93c5fd;
+  font-size: clamp(15px, 2.5vw, 20px);
+  font-weight: 600;
+  text-align: center;
+  margin-top: clamp(12px, 2vw, 20px);
+  margin-bottom: clamp(30px, 6vw, 50px);
+}
+
+.brand-track {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-track::before,
+.brand-track::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: clamp(40px, 10vw, 100px);
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.brand-track::before {
+  left: 0;
+  background: linear-gradient(90deg, #011542 0%, transparent 100%);
+}
+
+.brand-track::after {
+  right: 0;
+  background: linear-gradient(90deg, transparent 0%, #011542 100%);
+}
+
+.brand-slider {
+  display: flex;
+  align-items: center;
+  gap: clamp(30px, 6vw, 60px);
+  width: max-content;
+  animation: scroll-left 24s linear infinite;
+  padding: clamp(10px, 2vw, 20px) 0;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.brand-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: clamp(140px, 30vw, 200px);
+  flex-shrink: 0;
+}
+
+.brand-logo {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(30%) brightness(0) invert(1);
+  opacity: 0.85;
+  transition: all 0.3s ease;
+  object-fit: contain;
+}
+
+.brand-slider:hover .brand-logo {
+  filter: grayscale(0%) brightness(0) invert(1);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.brand-section .brand-logo {
+  max-height: clamp(50px, 12vw, 80px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-slider {
+    animation: none;
+  }
+}

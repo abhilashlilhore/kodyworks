@@ -155,6 +155,16 @@
 .header-nav span:nth-child(even) {
   color: #1d4ea6;
 }
+
+.header-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #4a90d9;
+}
 .logo-image-header{
     width: clamp(150px, 20vw, 320px);
     height:auto;

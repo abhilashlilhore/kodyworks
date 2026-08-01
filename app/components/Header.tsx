@@ -74,13 +74,17 @@ const Header = () => {
 
       {/* Bottom Menu */}
       <nav ref={navRef} className={`header-nav ${isSticky ? "header-nav-fixed" : ""}`}>
-        <span>IT CONSULTING</span>
+        <a href="#hero">HOME</a>
         <span>|</span>
-        <span>SOFTWARE DEVELOPMENT</span>
+        <a href="#about">ABOUT</a>
         <span>|</span>
-        <span>PROJECT MANAGEMENT</span>
+        <a href="#services">SERVICES</a>
         <span>|</span>
-        <span>AI SOLUTIONS</span>
+        <a href="#testimonials">TESTIMONIALS</a>
+        <span>|</span>
+        <a href="#why-choose">WHY CHOOSE</a>
+        <span>|</span>
+        <a href="#contact">CONTACT</a>
       </nav>
     </header>
   );
