@@ -17,7 +17,7 @@ const Header = () => {
             alt="KODY Works Logo"
             width={280}
             height={280}
-            className="logo-image"
+            className="logo-image-header"
             priority
           />
         </div>

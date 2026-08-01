@@ -17,8 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(15px, 5vw, 60px) clamp(20px, 8vw, 80px);
-  gap: clamp(20px, 5vw, 50px);
+  padding: clamp(15px, 5vw, 10px) clamp(20px, 8vw, 15px);
+  gap: clamp(20px, 5vw, 5px);
 }
 
 /* Logo */
@@ -148,7 +148,7 @@
 .header-nav span:nth-child(even) {
   color: #1d4ea6;
 }
-.logo-image{
+.logo-image-header{
     width: clamp(150px, 20vw, 320px);
     height:auto;
     object-fit:contain;
