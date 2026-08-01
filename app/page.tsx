@@ -37,7 +37,7 @@ const services = [
     icon: <Image
             src={it_consulting}
             alt="IT Consulting"
-            width={80}
+            width={94}
             height={80}
             className="logo-image"
             priority

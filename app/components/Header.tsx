@@ -1,15 +1,43 @@
+"use client";
+
+import { useState, useEffect, useRef } from "react";
 import "./Header.css";
 import Image from "next/image";
 import logo from "../assets/logo.jpeg";
 
 const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+  const navOffsetTopRef = useRef<number>(0);
+
+  useEffect(() => {
+    const measureNavPosition = () => {
+      if (navRef.current) {
+        const rect = navRef.current.getBoundingClientRect();
+        navOffsetTopRef.current = rect.top + window.scrollY;
+      }
+    };
+
+    measureNavPosition();
+
+    const handleScroll = () => {
+      if (navRef.current) {
+        setIsSticky(window.scrollY >= navOffsetTopRef.current);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="header">
       <div className="corner-light"></div>
       <div className="corner-dark"></div>
       <div className="header-top">
         {/* Logo */}
-
 
         <div className="logo-section">
           <Image
@@ -45,7 +73,7 @@ const Header = () => {
       </div>
 
       {/* Bottom Menu */}
-      <nav className="header-nav">
+      <nav ref={navRef} className={`header-nav ${isSticky ? "header-nav-fixed" : ""}`}>
         <span>IT CONSULTING</span>
         <span>|</span>
         <span>SOFTWARE DEVELOPMENT</span>
