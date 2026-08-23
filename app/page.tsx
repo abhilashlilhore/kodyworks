@@ -95,7 +95,6 @@ const services = [
 export default function Home() {
   return (
     <>
-      <Hero />
       <section className="services-section">
 
       <div className="services-background"></div>
@@ -124,6 +123,7 @@ export default function Home() {
       <TransparencySection />
       <Partners />
       <Insights />
+      <Hero />
     </>
   );
 }
