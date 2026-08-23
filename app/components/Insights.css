@@ -1,0 +1,115 @@
+.insights-section {
+  width: 100%;
+  background: #ffffff;
+  padding: clamp(44px, 7vw, 64px) 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.insights-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(24px, 4vw, 36px);
+  margin-top: 30px;
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #e4e9f2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(13, 75, 184, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(13, 75, 184, 0.12);
+}
+
+.blog-image-wrapper {
+  width: 100%;
+  height: 250px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #eef3fb;
+  position: relative;
+}
+
+.blog-image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1, 17, 66, 0.00) 0%, rgba(1, 17, 66, 0.18) 100%);
+  pointer-events: none;
+}
+
+.blog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 22px 24px 24px;
+  flex: 1;
+}
+
+.blog-meta {
+  font-size: 13px;
+  font-weight: 600;
+  color: #5b6b8c;
+}
+
+.blog-title {
+  font-size: clamp(17px, 2.6vw, 20px);
+  font-weight: 700;
+  color: #011542;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.blog-excerpt {
+  font-size: clamp(14px, 2.2vw, 15.5px);
+  line-height: 1.55;
+  color: #34466a;
+  margin: 0;
+  flex: 1;
+}
+
+.blog-link {
+  align-self: flex-start;
+  font-size: clamp(14px, 2.2vw, 15px);
+  font-weight: 700;
+  color: #0d4bb8;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.blog-link:hover {
+  color: #011542;
+  border-color: #011542;
+}
+
+@media (max-width: 1100px) {
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .blogs-grid {
+    grid-template-columns: 1fr;
+  }
+}
