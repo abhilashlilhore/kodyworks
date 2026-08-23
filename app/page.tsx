@@ -1,5 +1,11 @@
 import "./page.css";
 
+import Hero from "./components/Hero";
+import Partners from "./components/Partners";
+import Insights from "./components/Insights";
+import EnterpriseSection from "./components/EnterpriseSection";
+import TransparencySection from "./components/TransparencySection";
+
 import Image from "next/image";
 import softwer_development from "./assets/softwer_development.png";
 import remote_resource_management from "./assets/remote_resource_management.png";
@@ -88,25 +94,36 @@ const services = [
 
 export default function Home() {
   return (
-    <section className="services-section">
+    <>
+      <Hero />
+      <section className="services-section">
 
-      <div className="section-title">
-        <span className="line"></span>
-        <h2>OUR SERVICES</h2>
-        <span className="line"></span>
+      <div className="services-background"></div>
+
+      <div className="services-content">
+        <div className="section-title">
+          <span className="line"></span>
+          <h2>OUR SERVICES</h2>
+          <span className="line"></span>
+        </div>
+
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div className="service-card" key={index}>
+              <div className="service-icon">{service.icon}</div>
+
+              <h3>{service.title}</h3>
+              <h4>{service.subtitle}</h4>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div className="service-card" key={index}>
-            <div className="service-icon">{service.icon}</div>
-
-            <h3>{service.title}</h3>
-            <h4>{service.subtitle}</h4>
-          </div>
-        ))}
-      </div>
-
-    </section>
+      </section>
+      <EnterpriseSection />
+      <TransparencySection />
+      <Partners />
+      <Insights />
+    </>
   );
 }
