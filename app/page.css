@@ -1,5 +1,22 @@
 /* ==== Animation ==== */
 
+.top-banner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  overflow: hidden;
+}
+
+.top-banner-gif {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 .services-section {
   position: relative;
   overflow: hidden;

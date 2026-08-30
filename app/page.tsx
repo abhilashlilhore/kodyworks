@@ -95,6 +95,13 @@ const services = [
 export default function Home() {
   return (
     <>
+      <div className="top-banner">
+        <img
+          src="/assets/matrix_banner.gif"
+          alt="Matrix Services Banner"
+          className="top-banner-gif"
+        />
+      </div>
       <section className="services-section">
 
       <div className="services-background"></div>
