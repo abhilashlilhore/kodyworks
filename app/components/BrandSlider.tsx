@@ -1,30 +1,47 @@
 "use client";
 
 import "./BrandSlider.css";
-import Image from "next/image";
+import { useEffect, useState } from "react";
 
-import softwer_development from "../assets/softwer_development.png";
-import remote_resource_management from "../assets/remote_resource_management.png";
-import project_management from "../assets/project_management.png";
-import it_consulting from "../assets/it_consulting.png";
-import cloude_solution from "../assets/cloude_solution.png";
-import ai_automation_1 from "../assets/ai_automation_1.png";
-import footer_left from "../assets/footer_left.png";
-import footer_right from "../assets/footer_right.png";
-
-const brands = [
-  { src: footer_left, alt: "KODY Works Footer Logo Left" },
-  { src: footer_right, alt: "KODY Works Footer Logo Right" },
-  { src: softwer_development, alt: "Software Development" },
-  { src: project_management, alt: "Project Management" },
-  { src: it_consulting, alt: "IT Consulting" },
-  { src: cloude_solution, alt: "Cloud Solutions" },
-  { src: ai_automation_1, alt: "AI & Automation" },
-  { src: remote_resource_management, alt: "Remote Resource Management" },
+const clients = [
+  { name: "Amazon", logo: "/assets/client-logos/amazon.png" },
+  { name: "Microsoft", logo: "/assets/client-logos/microsoft.png" },
+  { name: "Walmart", logo: "/assets/client-logos/walmart.png" },
+  { name: "Netflix", logo: "/assets/client-logos/netflix.png" },
+  { name: "Spotify", logo: "/assets/client-logos/spotify.png" },
+  { name: "Salesforce", logo: "/assets/client-logos/salesforce.png" },
+  { name: "Accenture", logo: "/assets/client-logos/accenture.png" },
+  { name: "Deloitte", logo: "/assets/client-logos/deloitte.png" },
+  { name: "PwC", logo: "/assets/client-logos/pwc.png" },
+  { name: "EY", logo: "/assets/client-logos/ey.png" },
+  { name: "KPMG", logo: "/assets/client-logos/kpmg.png" },
+  { name: "Capgemini", logo: "/assets/client-logos/capgemini.png" },
+  { name: "Infosys", logo: "/assets/client-logos/infosys.png" },
+  { name: "TCS", logo: "/assets/client-logos/tcs.svg" },
+  { name: "Wipro", logo: "/assets/client-logos/wipro.png" },
+  { name: "HCL", logo: "/assets/client-logos/hcltech.svg" },
+  { name: "Cognizant", logo: "/assets/client-logos/cognizant.png" },
+  { name: "EPAM", logo: "/assets/client-logos/epam.png" },
+  { name: "Intuit", logo: "/assets/client-logos/intuit.png" },
+  { name: "Ford", logo: "/assets/client-logos/ford.png" },
 ];
 
-const BrandSlider = () => {
-  const duplicated = [...brands, ...brands];
+function getFallbackUrl(name: string) {
+  return `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=0D4BB8&color=fff&size=120&font-size=0.45`;
+}
+
+export default function BrandSlider() {
+  const duplicatedClients = [...clients, ...clients];
+  const [featuredIndex, setFeaturedIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFeaturedIndex((prev) => (prev + 1) % clients.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const featured = clients[featuredIndex];
 
   return (
     <section id="brands" className="brand-section">
@@ -38,24 +55,66 @@ const BrandSlider = () => {
         Can we get a hallelujah for these brands we have worked with?
       </p>
 
+      <div className="featured-logo-wrapper">
+        <ClientLogo
+          key={featured.name}
+          client={featured}
+          className="featured-logo"
+          width={200}
+          height={100}
+        />
+        <span className="featured-name">{featured.name}</span>
+      </div>
+
       <div className="brand-track">
-        <div className="brand-slider">
-          {duplicated.map((brand, index) => (
-            <div className="brand-item" key={index}>
-              <Image
-                src={brand.src}
-                alt={brand.alt}
-                width={160}
-                height={80}
+        <div className="brand-slider" aria-label="Client logos">
+          {duplicatedClients.map((client, index) => (
+            <div className="brand-item" key={`${client.name}-${index}`}>
+              <ClientLogo
+                client={client}
                 className="brand-logo"
-                unoptimized
+                width={120}
+                height={60}
               />
+              <span className="brand-name">{client.name}</span>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
-export default BrandSlider;
+function ClientLogo({
+  client,
+  className,
+  width,
+  height,
+}: {
+  client: (typeof clients)[0];
+  className: string;
+  width: number;
+  height: number;
+}) {
+  const [src, setSrc] = useState(client.logo);
+  const [hasError, setHasError] = useState(false);
+
+  const handleError = () => {
+    if (!hasError) {
+      setHasError(true);
+      setSrc(getFallbackUrl(client.name));
+    }
+  };
+
+  return (
+    <img
+      src={src}
+      alt={client.name}
+      width={width}
+      height={height}
+      className={className}
+      loading="lazy"
+      onError={handleError}
+    />
+  );
+}
