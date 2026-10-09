@@ -56,8 +56,8 @@ const Header = () => {
       dropdown: true,
       items: [
         { label: "Who We Are", href: "/about/who-we-are", desc: "Get your bearings on our values, culture, and unique approach." },
-        { label: "Life At American Chase", href: "/about/life-at-american-chase", desc: "Join a team of passionate innovators reimagining the future of work." },
-        { label: "Jobs At American Chase", href: "/about/jobs-at-american-chase", desc: "Explore opportunities that inspire, challenge, and unlock your potential." },
+         { label: "Life At KODY Works", href: "/about/life-at-american-chase", desc: "Join a team of passionate innovators reimagining the future of work." },
+         { label: "Jobs At KODY Works", href: "/about/jobs-at-american-chase", desc: "Explore opportunities that inspire, challenge, and unlock your potential." },
       ],
     },
     {
@@ -68,6 +68,7 @@ const Header = () => {
         { label: "Blogs", href: "/insights/blogs", desc: "Indelible insights and perspectives from our thought leaders on the front lines." },
       ],
     },
+    { label: "Showcase", href: "/index2" },
     { label: "Contact Us", href: "/contact-us" },
   ];
 

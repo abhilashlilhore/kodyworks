@@ -4,7 +4,7 @@ export default function LifeAtAmericanChasePage() {
   return (
     <div className="page-container">
       <div className="page-header">
-        <h1>Life At American Chase</h1>
+        <h1>Life At KODY Works</h1>
         <p>Join a team of passionate innovators reimagining the future of work.</p>
       </div>
       <div className="page-content">

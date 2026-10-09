@@ -4,7 +4,7 @@ export default function JobsAtAmericanChasePage() {
   return (
     <div className="page-container">
       <div className="page-header">
-        <h1>Jobs At American Chase</h1>
+        <h1>Jobs At KODY Works</h1>
         <p>Explore opportunities that inspire, challenge, and unlock your potential.</p>
       </div>
       <div className="page-content">
