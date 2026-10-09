@@ -2,11 +2,13 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import "./Header.css";
 import Image from "next/image";
 import logo from "../assets/logo.jpeg";
 
 const Header = () => {
+  const pathname = usePathname();
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -36,7 +38,15 @@ const Header = () => {
   }, []);
 
   const menuItems: { label: string; href?: string; dropdown?: boolean; items?: { label: string; href: string; desc?: string }[] }[] = [
-    { label: "Home", href: "/" },
+    {
+      label: "Home",
+      dropdown: true,
+      items: [
+        { label: "Home 1 (Classic)", href: "/", desc: "Classic white background layout with services grid" },
+        { label: "Home 2 (Animated)", href: "/index2", desc: "Animated banner with blue gradient design" },
+        { label: "Home 3 (Green Theme)", href: "/index3", desc: "Green animated banner with modern layout" },
+      ],
+    },
     {
       label: "Services",
       dropdown: true,
@@ -76,50 +86,77 @@ const Header = () => {
     setOpenDropdown(openDropdown === label ? null : label);
   };
 
+  const bannerGif =
+    pathname === "/index2"
+      ? "/assets/kodyworks_animated_lower_banner.gif"
+      : pathname === "/index3"
+      ? "/assets/matrix_banner.gif"
+      : null;
+
+  const bannerAlt =
+    pathname === "/index2"
+      ? "Kodyworks Animated Banner"
+      : pathname === "/index3"
+      ? "Matrix Banner"
+      : "";
+
+  const isBannerPage = bannerGif !== null;
+
   return (
     <header className="header">
-      <div className="corner-light"></div>
-      <div className="corner-dark"></div>
-      <div className="header-top">
-        <div className="logo-section">
-          <Image
-            src={logo}
-            alt="KODY Works Logo"
-            width={280}
-            height={280}
-            className="logo-image-header"
-            priority
+      {!isBannerPage && <div className="corner-light"></div>}
+      {!isBannerPage && <div className="corner-dark"></div>}
+
+      {isBannerPage ? (
+        <div className="banner-full-wrapper">
+          <img
+            src={bannerGif}
+            alt={bannerAlt}
+            className="banner-full-gif"
           />
         </div>
-
-        <div className="company-section">
-          <h1 className="company-name">
-            <span className="dark">KODY</span>
-            <span className="blue">Works</span>
-          </h1>
-
-          <div className="consulting-row">
-            <div className="line-one"></div>
-            <h2>CONSULTING</h2>
-            <div className="line-one"></div>
+      ) : (
+        <div className="header-top">
+          <div className="logo-section">
+            <Image
+              src={logo}
+              alt="KODY Works Logo"
+              width={280}
+              height={280}
+              className="logo-image-header"
+              priority
+            />
           </div>
-          <div className="consulting-row">
-            <div className="line-two"></div>
-            <p className="tagline">
-              Delivering Technology Solutions Worldwide
-            </p>
-            <div className="line-two"></div>
+
+          <div className="company-section">
+            <h1 className="company-name">
+              <span className="dark">KODY</span>
+              <span className="blue">Works</span>
+            </h1>
+
+            <div className="consulting-row">
+              <div className="line-one"></div>
+              <h2>CONSULTING</h2>
+              <div className="line-one"></div>
+            </div>
+            <div className="consulting-row">
+              <div className="line-two"></div>
+              <p className="tagline">
+                Delivering Technology Solutions Worldwide
+              </p>
+              <div className="line-two"></div>
+            </div>
           </div>
+
+          <button
+            className="mobile-menu-toggle"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? "✕" : "☰"}
+          </button>
         </div>
-
-        <button
-          className="mobile-menu-toggle"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
-        >
-          {mobileMenuOpen ? "✕" : "☰"}
-        </button>
-      </div>
+      )}
 
       <nav
         ref={navRef}
@@ -170,9 +207,9 @@ const Header = () => {
                 </Link>
               )}
             </li>
-          ))}
-        </ul>
-      </nav>
+            ))}
+          </ul>
+        </nav>
     </header>
   );
 };
