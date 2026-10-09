@@ -1,4 +1,5 @@
 import Link from "next/link";
+import About from "../../components/About";
 import "../page-shared.css";
 
 const aboutItems = [
@@ -14,6 +15,7 @@ export default function AboutPage() {
         <h1>About Chase</h1>
         <p>Discover our story, culture, and the people behind KODY Works.</p>
       </div>
+      <About />
       <div className="services-grid">
         {aboutItems.map((item) => (
           <Link href={item.href} key={item.href} className="service-card">
