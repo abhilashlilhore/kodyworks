@@ -1,0 +1,183 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/about",
+      "regex": "^/about(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about(?:/)?$"
+    },
+    {
+      "page": "/about/jobs-at-american-chase",
+      "regex": "^/about/jobs\\-at\\-american\\-chase(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/jobs\\-at\\-american\\-chase(?:/)?$"
+    },
+    {
+      "page": "/about/life-at-american-chase",
+      "regex": "^/about/life\\-at\\-american\\-chase(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/life\\-at\\-american\\-chase(?:/)?$"
+    },
+    {
+      "page": "/about/who-we-are",
+      "regex": "^/about/who\\-we\\-are(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/about/who\\-we\\-are(?:/)?$"
+    },
+    {
+      "page": "/api/contact",
+      "regex": "^/api/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contact(?:/)?$"
+    },
+    {
+      "page": "/contact-us",
+      "regex": "^/contact\\-us(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact\\-us(?:/)?$"
+    },
+    {
+      "page": "/index2",
+      "regex": "^/index2(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/index2(?:/)?$"
+    },
+    {
+      "page": "/index3",
+      "regex": "^/index3(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/index3(?:/)?$"
+    },
+    {
+      "page": "/insights",
+      "regex": "^/insights(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights(?:/)?$"
+    },
+    {
+      "page": "/insights/blogs",
+      "regex": "^/insights/blogs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/blogs(?:/)?$"
+    },
+    {
+      "page": "/insights/case-studies",
+      "regex": "^/insights/case\\-studies(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/insights/case\\-studies(?:/)?$"
+    },
+    {
+      "page": "/services",
+      "regex": "^/services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services(?:/)?$"
+    },
+    {
+      "page": "/services/cloud-devops-integrations",
+      "regex": "^/services/cloud\\-devops\\-integrations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/cloud\\-devops\\-integrations(?:/)?$"
+    },
+    {
+      "page": "/services/generative-ai",
+      "regex": "^/services/generative\\-ai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/generative\\-ai(?:/)?$"
+    },
+    {
+      "page": "/services/mobile-app-development",
+      "regex": "^/services/mobile\\-app\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/mobile\\-app\\-development(?:/)?$"
+    },
+    {
+      "page": "/services/mvp-development",
+      "regex": "^/services/mvp\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/mvp\\-development(?:/)?$"
+    },
+    {
+      "page": "/services/salesforce",
+      "regex": "^/services/salesforce(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/salesforce(?:/)?$"
+    },
+    {
+      "page": "/services/sap",
+      "regex": "^/services/sap(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/sap(?:/)?$"
+    },
+    {
+      "page": "/services/staffing",
+      "regex": "^/services/staffing(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/staffing(?:/)?$"
+    },
+    {
+      "page": "/services/web-development",
+      "regex": "^/services/web\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/web\\-development(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

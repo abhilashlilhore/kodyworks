@@ -1,0 +1,114 @@
+.about-section {
+  width: 100%;
+  padding: clamp(40px, 8vw, 100px) clamp(20px, 8vw, 40px);
+  background: linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: clamp(60px, 8vw, 120px) clamp(20px, 8vw, 60px);
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(40px, 8vw, 80px);
+  width: 100%;
+  max-width: 1140px;
+  margin-top: clamp(30px, 6vw, 60px);
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+  }
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(14px, 2vw, 20px);
+}
+
+.about-heading {
+  color: #011542;
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: clamp(10px, 2vw, 20px);
+}
+
+.about-paragraph {
+  color: #334159;
+  font-size: clamp(15px, 2.2vw, 19px);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.about-paragraph:last-child {
+  color: #1e293b;
+  font-weight: 500;
+}
+
+.about-graphic {
+  display: flex;
+  justify-content: center;
+}
+
+.graphic-circle {
+  width: clamp(220px, 50vw, 360px);
+  height: clamp(220px, 50vw, 360px);
+  border: 8px solid #0d4bb8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d4bb8 0%, #0439ad 100%);
+  box-shadow: 0 20px 60px rgba(13, 76, 184, 0.3);
+  position: relative;
+  overflow: visible;
+}
+
+.graphic-circle::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  border: 3px dashed rgba(13, 219, 248, 0.3);
+  z-index: 0;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.graphic-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.graphic-text {
+  display: block;
+  font-size: clamp(52px, 13vw, 96px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.graphic-label {
+  display: block;
+  font-size: clamp(14px, 2.5vw, 20px);
+  color: #93c5fd;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
