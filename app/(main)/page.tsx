@@ -12,17 +12,11 @@ export default function Home() {
   return (
     <div className="main-page-wrapper">
       <Hero />
-
-      <About />
-
+ <BrandSlider />
       <Services />
-
-      <BrandSlider />
-
+      <About />
       <Testimonials />
-
       <WhyChoose />
-
       <ClientSlider />
 
       <section className="our-expertise-section">
