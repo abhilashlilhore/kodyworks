@@ -17,6 +17,11 @@
 /.next/
 /out/
 
+# open-next build output
+/.open-next/
+/.wrangler/
+.dev.vars
+
 # production
 /build
 
