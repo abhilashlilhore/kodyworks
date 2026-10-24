@@ -37,7 +37,7 @@ export default function BrandSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setFeaturedIndex((prev) => (prev + 1) % clients.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(timer);
   }, []);
 
@@ -55,7 +55,7 @@ export default function BrandSlider() {
         Can we get a hallelujah for these brands we have worked with?
       </p>
 
-      <div className="featured-logo-wrapper">
+      <div className="featured-logo-wrapper" key={featuredIndex}>
         <ClientLogo
           key={featured.name}
           client={featured}

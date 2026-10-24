@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "My App",
+  title: "KodiWorks|Home",
   description: "Simple starter app.",
   icons: {
     icon: [{ url: "/favicon.png", type: "image/png" }],
