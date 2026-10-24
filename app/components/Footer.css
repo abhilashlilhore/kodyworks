@@ -133,32 +133,31 @@
 
 }
 
-.owner-icon {
-
-    font-size: 55px;
-
-    color: #1565ff;
-
+.footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 16px;
 }
 
-.label {
-
-    color: #1147b3;
-
-    font-size: 22px;
-
-    font-weight: bold;
-
-}
-
-.name {
-
-    font-size: 22px;
-
-    font-weight: bold;
-
+.footer-legal a {
     color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
 
+.footer-legal a:hover {
+    color: #1565ff;
+}
+
+.legal-sep {
+    color: #111;
+}
+
+.copyright {
+    color: #111;
+    font-weight: 500;
 }
 
 .logos-row {

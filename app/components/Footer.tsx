@@ -3,7 +3,6 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaUserCircle,
 } from "react-icons/fa";
 
 import Image from "next/image";
@@ -70,7 +69,7 @@ const Footer = () => {
           </div>
           <div>
             <h4>EMAIL</h4>
-            <p>rupendra.khatarker@gmail.com</p>
+            <p>info@kodystack.com</p>
           </div>
         </div>
 
@@ -99,9 +98,13 @@ const Footer = () => {
             />
           </div>
           <div className="owner">
-            <FaUserCircle className="owner-icon" />
-            <span className="label">PROPRIETOR:</span>
-            <span className="name">Rupendra Khatarker</span>
+            <div className="footer-legal">
+              <Link href="/terms-and-conditions">Terms & Conditions</Link>
+              <span className="legal-sep">|</span>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <span className="legal-sep">|</span>
+              <span className="copyright">© {new Date().getFullYear()} KODY Works. All Rights Reserved.</span>
+            </div>
           </div>
           <div className="logo-section-right">
             <Image
