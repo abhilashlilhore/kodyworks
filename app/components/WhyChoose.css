@@ -1,11 +1,18 @@
 .why-choose-section {
   width: 100%;
-  padding: clamp(50px, 8vw, 100px) clamp(20px, 8vw, 40px);
-  background: linear-gradient(180deg, #011542 0%, #0d4bb8 100%);
+  padding: clamp(40px, 6vw, 80px) clamp(16px, 6vw, 30px);
+  background:
+    linear-gradient(rgba(1, 21, 66, 0.65), rgba(13, 75, 184, 0.65)),
+    url('/assets/images(1).jfif');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #011542;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .why-choose-section .section-title h2 {
@@ -31,7 +38,7 @@
   grid-template-columns: 1fr;
   gap: clamp(24px, 5vw, 40px);
   width: 100%;
-  max-width: 1140px;
+  max-width: 1200px;
 }
 
 @media (min-width: 768px) {
@@ -49,15 +56,13 @@
 .why-card {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
-  padding: clamp(28px, 5vw, 40px);
+  border-radius: 16px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: clamp(16px, 3vw, 24px);
-  text-align: center;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  min-height: 380px;
 }
 
 .why-card:hover {
@@ -67,45 +72,45 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
-.why-badge {
-  width: clamp(44px, 8vw, 56px);
-  height: clamp(44px, 8vw, 56px);
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
-  color: #ffffff;
-  font-size: clamp(18px, 3vw, 26px);
-  font-weight: 800;
+.why-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 42%;
+  min-height: 110px;
+  overflow: hidden;
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(13, 110, 253, 0.4);
 }
 
-.why-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(70px, 14vw, 90px);
-  height: clamp(70px, 14vw, 90px);
-  filter: brightness(0) invert(1) opacity(0.85);
-}
-
-.why-logo {
-  max-width: 100%;
-  height: auto;
+.why-img {
   object-fit: contain;
+  object-position: center;
+  width: 60%;
+  height: auto;
+  max-width: 60%;
+}
+
+.why-content {
+  height: 58%;
+  padding: clamp(16px, 2.5vw, 22px);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .why-title {
   color: #ffffff;
-  font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(16px, 2.2vw, 20px);
   font-weight: 700;
   margin: 0;
+  line-height: 1.3;
 }
 
 .why-desc {
   color: #cbd5e1;
-  font-size: clamp(13px, 2vw, 16px);
+  font-size: clamp(12px, 1.6vw, 14px);
   line-height: 1.7;
   margin: 0;
 }
