@@ -9,13 +9,13 @@ const features = [
     desc: "Maintain access to a team of professionals throughout the entire project lifecycle, providing you with the expertise required to expand your outreach and optimize business growth.",
   },
   {
-    icon: "/assets/Adaptable-Team.jfif",
+    icon: "/assets/Adaptable-Team.png",
     alt: "Adaptable Team",
     title: "Flexible & Adaptable Team",
     desc: "Adaptability is more important than ever in the ever-evolving landscape. Our dynamic strategies are designed to suit your unique business needs and scale with your growth.",
   },
   {
-    icon: "/assets/dat-driven.jfif",
+    icon: "/assets/dat-driven.png",
     alt: "Data Driven",
     title: "Data-Driven Solutions",
     desc: "Websites are only as effective as the quantifiable outcomes they produce. We create real, measurable business results driven by data and analytics for maximum ROI.",
