@@ -1,5 +1,7 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import { NextRequest, NextResponse } from "next/server";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,16 +22,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT) || 465,
-      secure: true,
-      auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-      },
-    });
-
     const projectMap: Record<string, string> = {
       web: "Website Development",
       cloud: "Cloud Solutions",
@@ -45,6 +37,8 @@ export async function POST(request: NextRequest) {
       "over-50k": "$50,000+",
       "not-sure": "Not sure yet",
     };
+
+    const contactEmail = process.env.CONTACT_EMAIL || "abhilashlilhore1729@gmail.com";
 
     const html = `
       <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
@@ -65,16 +59,24 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    await transporter.sendMail({
-      from: process.env.SMTP_USER,
-      to: "abhilashlilhore1729@gmail.com",
+    const { data, error } = await resend.emails.send({
+      from: "KODY Works <onboarding@resend.dev>",
+      to: [contactEmail],
       subject: "New Inquiry from KODY Works Website",
       html,
       text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "N/A"}\nProject: ${projectMap[project] || project || "N/A"}\nBudget: ${budgetMap[budget] || budget || "N/A"}\nMessage: ${message}`,
       replyTo: email,
     });
 
-    return NextResponse.json({ success: true });
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json(
+        { error: error.message || "Failed to send message." },
+        { status: 500 }
+      );
+    }
+
+    return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error("Contact form error:", error);
     return NextResponse.json(
