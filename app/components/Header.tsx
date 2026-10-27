@@ -38,15 +38,7 @@ const Header = () => {
   }, []);
 
   const menuItems: { label: string; href?: string; dropdown?: boolean; items?: { label: string; href: string; desc?: string }[] }[] = [
-    {
-      label: "Home",
-      dropdown: true,
-      items: [
-        { label: "Home 1 (Classic)", href: "/", desc: "Classic white background layout with services grid" },
-        { label: "Home 2 (Animated)", href: "/index2", desc: "Animated banner with blue gradient design" },
-        { label: "Home 3 (Green Theme)", href: "/index3", desc: "Green animated banner with modern layout" },
-      ],
-    },
+    { label: "Home", href: "https://kodystack.com/" },
     {
       label: "Services",
       dropdown: true,
@@ -78,7 +70,6 @@ const Header = () => {
         { label: "Blogs", href: "/insights/blogs", desc: "Indelible insights and perspectives from our thought leaders on the front lines." },
       ],
     },
-    { label: "Showcase", href: "/index2" },
     { label: "Contact Us", href: "/contact-us" },
   ];
 
@@ -87,16 +78,12 @@ const Header = () => {
   };
 
   const bannerGif =
-    pathname === "/index2"
-      ? "/assets/kodyworks_animated_lower_banner.gif"
-      : pathname === "/index3"
+    pathname === "/index3"
       ? "/assets/matrix_banner.gif"
       : null;
 
   const bannerAlt =
-    pathname === "/index2"
-      ? "Kodyworks Animated Banner"
-      : pathname === "/index3"
+    pathname === "/index3"
       ? "Matrix Banner"
       : "";
 

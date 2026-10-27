@@ -11,12 +11,14 @@ import ClientSlider from "../components/ClientSlider";
 export default function Home() {
   return (
     <div className="main-page-wrapper">
-      <Hero />
- <BrandSlider />
+
       <Services />
+      <Hero />
+      <BrandSlider />
+      <WhyChoose />
       <About />
       <Testimonials />
-      <WhyChoose />
+
       <ClientSlider />
 
       <section className="our-expertise-section">
