@@ -1,6 +1,6 @@
 .services-section {
   width: 100%;
-  padding: clamp(50px, 8vw, 100px) clamp(20px, 8vw, 40px);
+  padding: clamp(50px, 8vw, 40px) clamp(20px, 8vw, 40px);
   background: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
@@ -15,7 +15,7 @@
   grid-template-columns: repeat(6, 1fr);
   width: 100%;
   max-width: 1200px;
-  margin-top: clamp(30px, 6vw, 60px);
+  margin-top: clamp(30px, 6vw, 30px);
 }
 
 .service-card {

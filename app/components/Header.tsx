@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Header.css";
 import Image from "next/image";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/logo-removebg-preview.png";
 
 const Header = () => {
   const pathname = usePathname();
