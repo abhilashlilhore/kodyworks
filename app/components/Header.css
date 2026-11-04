@@ -228,7 +228,6 @@
   gap: 0;
 }
 
-.has-dropdown:hover .dropdown-menu,
 .dropdown-menu.open {
   opacity: 1;
   visibility: visible;
