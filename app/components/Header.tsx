@@ -16,6 +16,11 @@ const Header = () => {
   const navOffsetTopRef = useRef<number>(0);
 
   useEffect(() => {
+    setOpenDropdown(null);
+    setMobileMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
     const measureNavPosition = () => {
       if (navRef.current) {
         const rect = navRef.current.getBoundingClientRect();

@@ -53,9 +53,9 @@ const Contact = () => {
             <iframe
               className="contact-map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23456.879832485532!2d78.964526!3d21.776259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a31aef5ab7c5e3b%3A0xfb8d8a0a7e1f8c7c!2sBetul%2C%20Madhya%20Pradesh%20460001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-              width="100%"
-              height="100%"
-              style={{ border: 0, borderRadius: "12px" }}
+              width="600"
+              height="450"
+              style={{ border: 0, borderRadius: "12px", width: "100%", height: "100%" }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
