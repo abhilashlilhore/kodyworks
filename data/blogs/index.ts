@@ -12,8 +12,8 @@ const blogs: BlogPost[] = [
   {
     slug: "tips-for-small-business-website-maintenance-in-2024",
     title: "Tips for small business website maintenance in 2024",
-    author: "Monet St Juste",
-    date: "February 29, 2024",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Internet Marketing",
     excerpt: "Are you struggling to keep your small business website up and running smoothly? Discover cost-effective strategies to maintain a high-performing website without breaking the bank.",
     content: `Are you struggling to keep your small business website up and running smoothly? Do you find it challenging to maintain your website within a limited budget?
@@ -108,8 +108,8 @@ Maintaining your small business website is vital for success in today's digital 
   {
     slug: "7-essential-elements-to-improve-your-engineering-firms-website",
     title: "7 Essential Elements to Improve Your Engineering Firm's Website",
-    author: "Monet St Juste",
-    date: "April 6, 2023",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "Whether it be engineering firms or any other, making an excellent first impression is crucial. Discover the 7 essential elements your engineering firm's website needs.",
     content: `Whether it be engineering firms or any other, making an excellent first impression is crucial. The first impression is mainly formed online on your website. Visitors may likely evaluate your business based on how appealing and user-friendly a website is.
@@ -151,8 +151,8 @@ Designing your engineering firm's website with appropriate CTAs is essential to 
   {
     slug: "10-essential-features-every-small-business-website-needs",
     title: "10 Essential Features Every Small Business Website Needs",
-    author: "Monet St Juste",
-    date: "March 28, 2023",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "A website is an important asset in this modern digital world that goes beyond giving your small business an online presence. Learn the 10 essential features you need.",
     content: `A website is an important asset in this modern digital world that goes beyond giving your small business an online presence. It is essential to differentiate yourself in the current competitive market.
@@ -202,8 +202,8 @@ Small business owners must prioritize online security, and taking precautions su
   {
     slug: "4-essential-elements-of-an-effective-web-design-for-roofing-companies",
     title: "4 Essential Elements Of An Effective Web Design For Roofing Companies",
-    author: "Monet St Juste",
-    date: "March 17, 2023",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Web Development",
     excerpt: "Roofing companies need a strong web presence that effectively helps sell their services to consumers in their target demographic. Discover the 4 essential elements.",
     content: `Roofing companies need a strong web presence that effectively helps sell their services to consumers in their target demographic. Establishing a website for your roofing company can bolster your online standing, entice prospective customers, and increase your current clientele.
@@ -229,8 +229,8 @@ Incorporating strategic calls-to-action (CTAs) into your website design is a cru
   {
     slug: "4-marketing-hacks-for-orthodontic-practice-lead-generation",
     title: "4 Marketing Hacks for Orthodontic Practice Lead Generation",
-    author: "Monet St Juste",
-    date: "March 3, 2023",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "Are you an orthodontist looking for ways to attract more patients to your practice? If so, don't worry, you're not alone. Here are 4 marketing hacks for orthodontic lead generation.",
     content: `Are you an orthodontist looking for ways to attract more patients to your practice? If so, don't worry, you're not alone! One crucial aspect of growing your orthodontic practice is spreading the word within your local community through digital marketing strategies.
@@ -258,8 +258,8 @@ By tapping into the power of word-of-mouth, you can turn your existing patients 
   {
     slug: "3-marketing-hacks-for-psychiatric-counseling-lead-generation",
     title: "3 Marketing Hacks For Psychiatric Counseling Lead Generation",
-    author: "Monet St Juste",
-    date: "July 1, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "You know it, we know it, counseling and psychiatric practices are up against this digital industry revolution. With increasing online competition, here are 3 marketing hacks.",
     content: `You know it, we know it, counseling and psychiatric practices are up against this digital industry revolution. With increasing online presence and everyone utilizing the power of the internet to compete locally, there are only a few that actually thrive and dominate.
@@ -292,8 +292,8 @@ There are just a couple of things to keep in mind here:
   {
     slug: "4-marketing-secrets-every-auto-repair-shop-must-know",
     title: "4 Marketing Secrets Every Auto Repair Shop Must Know",
-    author: "Monet St Juste",
-    date: "July 1, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "Marketing your vehicle mechanic company shouldn't be an afterthought, whether you're just started or an established auto mechanic. Here are 4 marketing secrets.",
     content: `Marketing your vehicle mechanic company shouldn't be an afterthought, whether you're just started or an established auto mechanic. Fortunately, auto repair marketing doesn't have to be expensive to be powerful and profit generating.
@@ -319,8 +319,8 @@ Only marketing an auto repair shop as a simple business won't ring a bell to any
   {
     slug: "3-marketing-tricks-for-local-roofing-lead-generation",
     title: "3 Marketing Tricks For Local Roofing Lead Generation",
-    author: "Monet St Juste",
-    date: "June 9, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Roofing Marketing",
     excerpt: "You know it, we know it, local businesses and contractors are up against this digital industry revolution. Here are 3 marketing tricks for local roofing lead generation.",
     content: `You know it, we know it, local businesses and contractors are up against this digital industry revolution. With increasing online presence and everyone utilizing the power of the internet to compete locally, there are only a few that actually thrive and dominate.
@@ -348,8 +348,8 @@ If you are targeting multiple markets or local branches, craft landing pages spe
   {
     slug: "how-to-attract-more-roofing-clients-by-leveraging-the-internet",
     title: "How To Attract more Roofing Clients by Leveraging the Internet",
-    author: "Monet St Juste",
-    date: "April 1, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "You probably learned that one of the most demanding parts of your roofing business is bringing in new clients consistently. Learn how to attract more roofing clients online.",
     content: `You probably learned that one of the most demanding parts of your roofing business is bringing in new clients consistently and sustainably. Most roofers tend to focus on only traditional forms of advertising such as newspaper ads, door knocking, flyers, door hangers or those big billboards. These methods can definitely be helpful, but they aren't nearly as effective as combining them with advertising your roofing business online.
@@ -369,8 +369,8 @@ Another amazing way to use the internet to acquire more clients is with Google L
   {
     slug: "5-marketing-tricks-every-roofer-must-know",
     title: "5 Marketing Tricks Every Roofer Must Know",
-    author: "Monet St Juste",
-    date: "April 1, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Roofing Marketing",
     excerpt: "Marketing your roofing company shouldn't be an afterthought, whether you're just started or an established reputable roofer. Here are 5 marketing tricks.",
     content: `Marketing your roofing company shouldn't be an afterthought, whether you're just started or an established reputable roofer. Fortunately, roofing marketing doesn't have to be expensive to be powerful and profit generating.
@@ -398,8 +398,8 @@ You need to bring a fresh new angle to your marketing efforts, such as marketing
   {
     slug: "online-business-marketing-ideas-for-2021",
     title: "Online Business Marketing Ideas for 2021",
-    author: "Monet St Juste",
-    date: "March 25, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Roofing Marketing",
     excerpt: "You are probably so busy with managing your day to day business operations and coordinating with your fellow contractors. Here are online business marketing ideas for 2021.",
     content: `Even if you're starting from zero you can always get the right tools, guidance, and marketing ideas you need to get your roofing business to grow.
@@ -427,8 +427,8 @@ You probably have a lot of photos of before and after pictures of the amazing ro
   {
     slug: "4-ways-to-generate-roofing-leads-online-for-2021",
     title: "4 Ways To Generate Roofing Leads Online for 2021",
-    author: "Monet St Juste",
-    date: "March 4, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Roofing Marketing",
     excerpt: "One of the bigger challenges for your roofing business is acquiring high-quality leads. Especially when 95% of marketing 'gurus' either overcomplicate or oversimplify the process.",
     content: `One of the bigger challenges for your roofing business is acquiring high-quality leads. Especially when 95% of marketing "gurus" either don't know nothing about the roofing industry or don't know what they are doing.
@@ -452,8 +452,8 @@ Who doesn't like free stuff, right? Providing a free quote or consultation for p
   {
     slug: "5-tips-to-improve-the-professional-image-of-your-roofing-business",
     title: "5 Tips To Improve the Professional Image Of Your Roofing Business",
-    author: "Monet St Juste",
-    date: "February 19, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "As you already know, the roofing industry is a competitive space and you need to do everything possible to stand out. Here are 5 tips to improve your professional image.",
     content: `As you already know, the roofing industry is a competitive space and you need to do everything possible to stand out from the sea of roofers in the market. Often, that comes down to the image and brand offer that you're showcasing to your potential clients.
@@ -477,8 +477,8 @@ The best way to establish your professional image is to create a company that ai
   {
     slug: "4-tips-for-roofers-on-how-to-respond-to-negative-reviews",
     title: "4 Tips for Roofers On How To Respond to Negative Reviews",
-    author: "Monet St Juste",
-    date: "January 19, 2021",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Online Branding",
     excerpt: "Say goodbye to the days of irritating letter writers and let's say hello to the negative online reviewers. Here are 4 tips for roofers on how to respond to negative reviews.",
     content: `Say goodbye to the days of irritating letter writers and let's say hello to the negative online reviewers. Whether you've surged right into the digital world or you deal with it occasionally, the reality is that negative online reviews can turn prospective customers away.
@@ -502,8 +502,8 @@ Balance out the negative with the positive. Make a habit of asking satisfied cus
   {
     slug: "3-simple-fixes-to-skyrocket-your-residential-installation-jobs",
     title: "3 Simple Fixes to Skyrocket Your Residential Installation Jobs From Your Online Presence",
-    author: "Monet St Juste",
-    date: "November 17, 2020",
+    author: "Rupendra K",
+    date: "November 5, 2026",
     category: "Roofing Marketing",
     excerpt: "To bring in more residential roofing installation and replacement jobs from your online presence is really SIMPLE; DON'T OVER COMPLICATE IT. Here are 3 simple fixes.",
     content: `To bring in more residential roofing installation and replacement jobs from your online presence is really SIMPLE; DON'T OVER COMPLICATE IT.
