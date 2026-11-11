@@ -11,8 +11,8 @@ const contactItems = [
   {
     icon: <FaEnvelope />,
     title: "Email",
-    value: "rupendra.khatarker@gmail.com",
-    href: "mailto:rupendra.khatarker@gmail.com",
+    value: "info@kodystack.com",
+    href: "mailto:info@kodystack.com",
   },
   {
     icon: <FaPhoneAlt />,

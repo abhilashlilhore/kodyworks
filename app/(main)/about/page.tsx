@@ -4,8 +4,8 @@ import "../page-shared.css";
 
 const aboutItems = [
   { title: "Who We Are", href: "/about/who-we-are", desc: "Get your bearings on our values, culture, and unique approach." },
-  { title: "Life At KODY Works", href: "/about/life-at-american-chase", desc: "Join a team of passionate innovators reimagining the future of work." },
-  { title: "Jobs At KODY Works", href: "/about/jobs-at-american-chase", desc: "Explore opportunities that inspire, challenge, and unlock your potential." },
+  { title: "Life At KODY Works", href: "/about/life-at-kody-works", desc: "Join a team of passionate innovators reimagining the future of work." },
+  { title: "Jobs At KODY Works", href: "/about/jobs-at-kody-works", desc: "Explore opportunities that inspire, challenge, and unlock your potential." },
 ];
 
 export default function AboutPage() {

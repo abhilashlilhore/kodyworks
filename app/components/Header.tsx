@@ -63,8 +63,8 @@ const Header = () => {
       dropdown: true,
       items: [
         { label: "Who We Are", href: "/about/who-we-are", desc: "Get your bearings on our values, culture, and unique approach." },
-         { label: "Life At KODY Works", href: "/about/life-at-american-chase", desc: "Join a team of passionate innovators reimagining the future of work." },
-         { label: "Jobs At KODY Works", href: "/about/jobs-at-american-chase", desc: "Explore opportunities that inspire, challenge, and unlock your potential." },
+         { label: "Life At KODY Works", href: "/about/life-at-kody-works", desc: "Join a team of passionate innovators reimagining the future of work." },
+         { label: "Jobs At KODY Works", href: "/about/jobs-at-kody-works", desc: "Explore opportunities that inspire, challenge, and unlock your potential." },
       ],
     },
     {
