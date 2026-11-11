@@ -31,8 +31,8 @@ const Footer = () => {
           <h4>About Chase</h4>
           <ul>
             <li><Link href="/about/who-we-are">Who We Are</Link></li>
-            <li><Link href="/about/life-at-american-chase">Life At KODY Works</Link></li>
-            <li><Link href="/about/jobs-at-american-chase">Jobs At KODY Works</Link></li>
+            <li><Link href="/about/life-at-kody-works">Life At KODY Works</Link></li>
+            <li><Link href="/about/jobs-at-kody-works">Jobs At KODY Works</Link></li>
           </ul>
         </div>
         <div className="footer-column">
