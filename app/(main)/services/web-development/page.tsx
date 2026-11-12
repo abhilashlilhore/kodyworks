@@ -1,4 +1,10 @@
 import "./web-development.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Web Development Services | KODY Works",
+  description: "Custom web solutions built with modern technologies. Conversion-focused websites, landing pages, web apps and UX/UI design for business growth.",
+};
 
 const featureList = [
   {

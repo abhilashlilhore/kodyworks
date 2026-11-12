@@ -1,4 +1,10 @@
 import "./sap.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "SAP Implementation Services | KODY Works",
+  description: "Enterprise SAP implementation and integration. ERP, CRM, SCM, HCM, Analytics and Cloud Migration tailored to your industry.",
+};
 
 const modules = [
   {

@@ -1,7 +1,13 @@
 import "../../page-shared.css";
 import "./blogs.css";
+import { Metadata } from "next";
 import Link from "next/link";
 import { getAllBlogs } from "@/data/blogs";
+
+export const metadata: Metadata = {
+  title: "Blogs | KODY Works",
+  description: "Indelible insights and perspectives from our thought leaders on web development, AI, marketing and technology.",
+};
 
 export default function BlogsPage() {
   const blogs = getAllBlogs();

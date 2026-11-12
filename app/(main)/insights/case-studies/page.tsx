@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import "../../page-shared.css";
 import "./case-studies.css";
+
+export const metadata: Metadata = {
+  title: "Case Studies | KODY Works",
+  description: "Client success stories. See how KODY Works helps businesses grow with design, development and digital strategy.",
+};
 
 const featuredCase = {
   category: "Healthcare & Counseling",

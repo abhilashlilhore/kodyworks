@@ -1,6 +1,11 @@
-"use client";
-
+import { Metadata } from "next";
 import "./generative-ai.css";
+import Faq from "./Faq";
+
+export const metadata: Metadata = {
+  title: "Generative AI Services | KODY Works",
+  description: "Generative AI consulting and integration. LLM integration, custom AI applications, intelligent automation and AI strategy for your business.",
+};
 
 const features = [
   {
@@ -162,23 +167,7 @@ export default function GenerativeAIPage() {
           <p>Everything you need to know about generative AI.</p>
         </div>
         <div className="gen-ai-faq">
-          {faqs.map((faq, i) => (
-            <div className="gen-ai-faq-item" key={i}>
-              <button className="gen-ai-faq-question" onClick={(e) => {
-                const btn = e.currentTarget as HTMLElement;
-                const item = btn.parentElement as HTMLElement;
-                const answer = item.querySelector(".gen-ai-faq-answer") as HTMLElement;
-                const arrow = item.querySelector(".gen-ai-faq-arrow") as HTMLElement;
-                const open = answer.style.maxHeight && answer.style.maxHeight !== "0px";
-                answer.style.maxHeight = open ? "0px" : answer.scrollHeight + "px";
-                arrow.style.transform = open ? "rotate(0deg)" : "rotate(180deg)";
-              }}>
-                <h4>{faq.q}</h4>
-                <span className="gen-ai-faq-arrow">▼</span>
-              </button>
-              <div className="gen-ai-faq-answer">{faq.a}</div>
-            </div>
-          ))}
+          <Faq faqs={faqs} />
         </div>
       </section>
 

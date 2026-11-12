@@ -1,5 +1,11 @@
 import Contact from "../../components/Contact";
+import { Metadata } from "next";
 import "../page-shared.css";
+
+export const metadata: Metadata = {
+  title: "Contact Us | KODY Works",
+  description: "Get in touch with KODY Works. Reach out for IT consulting, software development and technology solutions.",
+};
 
 export default function ContactUsPage() {
   return (

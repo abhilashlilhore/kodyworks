@@ -2,7 +2,34 @@ import "../../../page-shared.css";
 import "./blog-detail.css";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getBlogBySlug } from "@/data/blogs";
+import { Metadata } from "next";
+import { getBlogBySlug, getAllBlogs } from "@/data/blogs";
+
+export async function generateStaticParams() {
+  const blogs = getAllBlogs();
+  return blogs.map((blog) => ({ slug: blog.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const blog = getBlogBySlug(slug);
+
+  if (!blog) {
+    return { title: "Blog Not Found | KODY Works" };
+  }
+
+  return {
+    title: `${blog.title} | KODY Works`,
+    description: blog.excerpt,
+    openGraph: {
+      title: blog.title,
+      description: blog.excerpt,
+      type: "article",
+      authors: [blog.author],
+      publishedTime: blog.date,
+    },
+  };
+}
 
 export default async function BlogDetailPage({
   params,

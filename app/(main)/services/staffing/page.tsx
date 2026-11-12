@@ -1,4 +1,10 @@
 import "./staffing.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "IT Staffing Solutions | KODY Works",
+  description: "Flexible IT staffing on demand. Contract staffing, direct placement and dedicated teams for full-stack, frontend, backend, mobile, DevOps and QA roles.",
+};
 
 const services = [
   {

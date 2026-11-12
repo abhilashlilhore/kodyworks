@@ -1,4 +1,10 @@
 import "./mvp.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "MVP Development | KODY Works",
+  description: "Rapid MVP development to validate your idea. Idea validation, prototyping and lean production-ready MVPs with fast time-to-market.",
+};
 
 const services = [
   {

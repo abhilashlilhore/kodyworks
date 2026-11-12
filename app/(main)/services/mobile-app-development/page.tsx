@@ -1,4 +1,10 @@
 import "./mobile.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mobile App Development | KODY Works",
+  description: "Native and cross-platform mobile apps for iOS and Android. Flutter, React Native, Swift and Kotlin development with app store deployment.",
+};
 
 const features = [
   {
