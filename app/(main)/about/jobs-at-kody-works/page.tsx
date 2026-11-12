@@ -1,6 +1,12 @@
 import "../../page-shared.css";
+import { Metadata } from "next";
 import "./jobs.css";
 import JobApplicationForm from "./JobApplicationForm";
+
+export const metadata: Metadata = {
+  title: "Jobs At KODY Works | KODY Works",
+  description: "Explore career opportunities at KODY Works. Join our team of IT professionals and grow your career.",
+};
 
 const jobOpenings = [
   {

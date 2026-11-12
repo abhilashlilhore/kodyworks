@@ -1,4 +1,10 @@
 import "./cloud-devops.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Cloud & DevOps Services | KODY Works",
+  description: "Cloud migration, CI/CD pipelines, infrastructure as code and custom integrations on AWS, Azure and GCP for scalable infrastructure.",
+};
 
 const services = [
   {

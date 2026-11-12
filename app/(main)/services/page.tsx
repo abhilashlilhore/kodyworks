@@ -1,5 +1,11 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import "../page-shared.css";
+
+export const metadata: Metadata = {
+  title: "Our Services | KODY Works",
+  description: "End-to-end technology solutions tailored to your business needs. Web development, generative AI, Salesforce, SAP, cloud & DevOps, mobile apps, MVP and staffing.",
+};
 
 const services = [
   { title: "Web Development", href: "/services/web-development", desc: "Custom web solutions with modern tech stacks." },

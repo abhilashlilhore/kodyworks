@@ -1,4 +1,10 @@
 import "../../page-shared.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Life At KODY Works | KODY Works",
+  description: "Join a team of passionate innovators reimagining the future of work at KODY Works.",
+};
 
 export default function LifeAtAmericanChasePage() {
   return (

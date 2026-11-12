@@ -1,4 +1,5 @@
 import "./page.css";
+import { Metadata } from "next";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import BrandSlider from "../components/BrandSlider";
@@ -7,6 +8,16 @@ import Testimonials from "../components/Testimonials";
 import WhyChoose from "../components/WhyChoose";
 import Contact from "../components/Contact";
 import ClientSlider from "../components/ClientSlider";
+
+export const metadata: Metadata = {
+  title: "KODY Works | IT Consulting & Software Development",
+  description: "KODY Works - Leading IT consulting company providing web development, generative AI, Salesforce, SAP, cloud & DevOps, mobile app development, MVP development and staffing solutions.",
+  openGraph: {
+    title: "KODY Works | IT Consulting & Software Development",
+    description: "KODY Works - Leading IT consulting company providing web development, generative AI, Salesforce, SAP, cloud & DevOps, mobile app development, MVP development and staffing solutions.",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (

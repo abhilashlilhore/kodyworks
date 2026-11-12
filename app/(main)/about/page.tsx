@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import About from "../../components/About";
 import "../page-shared.css";
+
+export const metadata: Metadata = {
+  title: "About Us | KODY Works",
+  description: "Discover our story, culture, and the people behind KODY Works. IT consulting and software development company.",
+};
 
 const aboutItems = [
   { title: "Who We Are", href: "/about/who-we-are", desc: "Get your bearings on our values, culture, and unique approach." },
@@ -12,7 +18,7 @@ export default function AboutPage() {
   return (
     <div className="page-container">
       <div className="page-header">
-        <h1>About Chase</h1>
+        <h1>About Us</h1>
         <p>Discover our story, culture, and the people behind KODY Works.</p>
       </div>
       <About />

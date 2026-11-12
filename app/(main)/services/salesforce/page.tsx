@@ -1,4 +1,10 @@
 import "./salesforce.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Salesforce Consulting & Implementation | KODY Works",
+  description: "Salesforce CRM implementation, customization, integration and managed services. Sales Cloud, Service Cloud and Marketing Cloud specialists.",
+};
 
 const services = [
   {
