@@ -2,7 +2,6 @@ import "../../page-shared.css";
 import "./life-at-kody-works.css";
 import Link from "next/link";
 import { Metadata } from "next";
-import { FaLinkedin } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Life At KODY Works | KODY Works",
@@ -85,13 +84,6 @@ const workLife = [
       </svg>
     ),
   },
-];
-
-const team = [
-  { name: "Ayush Jain", role: "CTO", initials: "AJ" },
-  { name: "Yash Chouhan", role: "CEO", initials: "YC" },
-  { name: "Akshar Sisodia", role: "Director", initials: "AS" },
-  { name: "Adhir Dubey", role: "Director", initials: "AD" },
 ];
 
 const perks = [
@@ -190,32 +182,6 @@ export default function LifeAtKodyWorksPage() {
               <div className="life-work-content">
                 <h4 style={{ color: "#0d4bb8" }}>{p}</h4>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* ===== Our People ===== */}
-      <section className="life-section life-section-alt">
-        <div className="life-section-title">
-          <span className="line"></span>
-          <h2>Our People</h2>
-          <span className="line"></span>
-        </div>
-        <div className="life-intro">
-          <p>
-            The KODY Works team is a close-knit group of like-minded experts who share a passion for technology and helping businesses succeed. Meet the leaders shaping our journey.
-          </p>
-        </div>
-        <div className="life-people-grid">
-          {team.map((t) => (
-            <div key={t.name} className="life-people-card">
-              <div className="life-people-avatar">{t.initials}</div>
-              <h4>{t.name}</h4>
-              <p className="life-people-role">{t.role}</p>
-              <a href="#" className="life-people-social" aria-label={`${t.name} LinkedIn`}>
-                <FaLinkedin />
-              </a>
             </div>
           ))}
         </div>

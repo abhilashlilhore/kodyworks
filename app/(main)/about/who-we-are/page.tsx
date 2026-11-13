@@ -1,7 +1,6 @@
 import "../../page-shared.css";
 import "./who-we-are.css";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
 
 export const metadata = {
   title: "Who We Are | KODY Works",
@@ -112,13 +111,6 @@ const differentiators = [
   },
 ];
 
-const leaders = [
-  { name: "Ayush Jain", role: "CTO", initials: "AJ" },
-  { name: "Yash Chouhan", role: "CEO", initials: "YC" },
-  { name: "Akshar Sisodia", role: "Director", initials: "AS" },
-  { name: "Adhir Dubey", role: "Director", initials: "AD" },
-];
-
 export default function WhoWeArePage() {
   return (
     <div className="who-page">
@@ -195,7 +187,7 @@ export default function WhoWeArePage() {
         </div>
         <div className="who-intro">
           <p>
-            Code Green. Scale Infinite. Impact Real. These aren't just buzzwords—they're the principles that define how we work, build, and deliver for our clients.
+            Code Green. Scale Infinite. Impact Real. These aren&apos;t just buzzwords&mdash;they&apos;re the principles that define how we work, build, and deliver for our clients.
           </p>
         </div>
         <div className="who-different-grid">
@@ -231,32 +223,6 @@ export default function WhoWeArePage() {
               We see a future where technology brings people together, fuels progress, and makes the world a better place. With innovation, integrity, and heart, we&apos;re building a smarter, more connected world—one solution at a time.
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* ===== Leadership Team ===== */}
-      <section className="who-section">
-        <div className="who-section-title">
-          <span className="line"></span>
-          <h2>Our Leadership Team</h2>
-          <span className="line"></span>
-        </div>
-        <div className="who-intro">
-          <p>
-            Since our inception, we&apos;ve been led by some of the brightest minds in the industry. With a mix of technical and business expertise, our leadership team is poised to take KODY Works to unique frontiers.
-          </p>
-        </div>
-        <div className="who-leadership-grid">
-          {leaders.map((l) => (
-            <div key={l.name} className="who-leader-card">
-              <div className="who-leader-avatar">{l.initials}</div>
-              <h4>{l.name}</h4>
-              <p className="who-leader-role">{l.role}</p>
-              <a href="#" className="who-leader-social" aria-label={`${l.name} LinkedIn`}>
-                <FaLinkedin />
-              </a>
-            </div>
-          ))}
         </div>
       </section>
 
